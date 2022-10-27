@@ -1,0 +1,199 @@
+# Ocean Utility
+# By SpreestDev
+#
+# All rights reserved to use, copy, modify, and distribute this software without
+# restriction, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+# The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+#
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+#
+
+# Available placeholders for messages
+# {player}: The player's name
+# {target}: The target's name
+# {group}: The group's prefix
+# {vip}: Vip group prefix if the user haves it
+# {tag}: A custom tag
+
+text-formatting-options:
+  default-color-code: '&'
+  plugin-prefix-messages: "&8[ &b&lOcean&bHub &8]&f"
+  plugin-prefix-color: "&b"
+
+luck-perms:
+  enabled: true
+  chat-prefix:
+    enabled: true
+    messages-prefix: "&8[{vip}&8]&f &8[{group}&8]&f {player}&f &8»%cp {message}"
+    messages-prefix-no-vip: "&8[{group}&8]&f {player}&f &8»%cp {message}"
+    default-prefix: "&bUser"
+
+
+scoreboard:
+  title-animated: true
+  animation-tick: 5
+  title-animation-steps:
+    - "&lOCEAN HUB"
+    - "&9&lOC&b&lE&f&lAN HUB"
+    - "&b&lO&9&lCE&b&lA&f&lN HUB"
+    - "&lO&b&lC&9&lEA&b&lN&f&l HUB"
+    - "&lOC&b&lE&9&lAN&b&l H&f&lUB"
+    - "&lOCE&b&lA&9&lN H&b&lU&f&lB"
+    - "&lOCEA&b&lN&9&l HU&b&lB"
+    - "&lOCEAN &b&lH&9&lUB"
+    - "&lOCEAN H&b&lU&9&lB"
+    - "&lOCEAN HU&b&lB"
+
+  # No animation
+  title: "OCEAN HUB"
+
+  # Placeholder available
+  # %p player name
+  # %r player rank
+  # %date today date
+  # %online total online players
+
+  body:
+    - "         &7%date"
+    - "&0"
+    - "&8&l〖&b&lInformation's&8&l〗"
+    - "   ↳ Player: &b%p"
+    - "   ↳ Rank: %r"
+    - "&1"
+    - "&8&l〖&b&l Network&8&l〗"
+    - "   ↳ Online Player: &9%online"
+    - "&2"
+    - "   &nplay.oceanhub.me"
+
+
+vips-groups:
+  # This part is optional
+  # If the program doesn't find the group that is begun searched
+  # the plugin will return the luck perms display name
+
+  enabled: true
+  vip-1:
+    name: "omegavip" # Luck perms group name
+    display-name: "&6OmegaVip" # This is the name that will be displayed on the server
+    chat-prefix-color-enabled: true
+    chat-prefix-name: ""
+    chat-prefix-color: "&6"
+
+staff-groups:
+  # This part is optional
+  # If the program doesn't find the group that is begun searched
+  # it will give the luck perms group display name
+
+  enabled: true
+  staff-1: # The colors are in RGB format
+    name: "admin"
+    display-name: "&#ed24d9Admin"
+    chat-prefix-color-enabled: true
+    chat-prefix-color: "#ed24d9"
+  staff-2:
+    name: "supervisor"
+    display-name: "&#f075e3Supervisor"
+    chat-prefix-color-enabled: true
+    chat-prefix-color: "#f075e3"
+  staff-3:
+    name: "coordinator"
+    display-name: "&dCoordinator"
+    chat-prefix-color-enabled: true
+    chat-prefix-color: "#cc23bb"
+
+player-list-decorations:
+  animation-tick: 10
+  title:
+    animated: true
+    animation:
+      - "&lBENVENUTO SU OCEAN HUB"
+      - "&b&lB&f&lENVENUTO SU OCEAN HUB"
+      - "&lB&b&lE&f&lNVENUTO SU OCEAN HUB"
+      - "&lBE&b&lN&f&lVENUTO SU OCEAN HUB"
+      - "&lBEN&b&lV&f&lENUTO SU OCEAN HUB"
+      - "&lBENV&b&lE&f&lNUTO SU OCEAN HUB"
+      - "&lBENVE&b&lN&f&lUTO SU OCEAN HUB"
+      - "&lBENVE&b&lN&f&lUTO SU OCEAN HUB"
+      - "&lBENVE&b&lN&f&lUTO SU OCEAN HUB"
+      - "&lBENVEN&b&lU&f&lTO SU OCEAN HUB"
+      - "&lBENVENU&b&lT&f&lO SU OCEAN HUB"
+      - "&lBENVENUT&b&lO&f&l SU OCEAN HUB"
+      - "&lBENVENUTO &b&lS&f&lU OCEAN HUB"
+      - "&lBENVENUTO S&b&lU&f&l OCEAN HUB"
+      - "&lBENVENUTO SU &b&lO&f&lCEAN HUB"
+      - "&lBENVENUTO SU O&b&lC&f&lEAN HUB"
+      - "&lBENVENUTO SU OC&b&lE&f&lAN HUB"
+      - "&lBENVENUTO SU OCE&b&lA&f&lN HUB"
+      - "&lBENVENUTO SU OCEA&b&lN&f&l HUB"
+      - "&lBENVENUTO SU OCEAN &b&lH&f&lUB"
+      - "&lBENVENUTO SU OCEAN H&b&lU&f&lB"
+      - "&lBENVENUTO SU OCEAN HU&b&lB&f&l"
+      - "&lBENVENUTO SU OCEAN HUB"
+
+    # No animation
+    title: "BENVENUTO SU OCEAN HUB"
+
+  body:
+    body-div: "&0"
+    content-top: # Available placeholder -> %p is player name
+      - "&8⇚ &bModalità &8⇛"
+      - "&fSurvival"
+      - "&fBedWars"
+
+    links:
+      animated: false
+      list-animated: # Max links animation 2
+        div-1: "link 1"
+        1:
+          - "https://link1"
+          - "&bh&fttps://link1"
+          - "h&bt&ftps://link1"
+          - "ht&bt&fps://link1"
+          - "htt&bp&fs://link1"
+          - "http&bs&f://link1"
+          - "https&b:&f//link1"
+          - "https:&b/&f/link1"
+          - "https:/&b/&flink1"
+          - "https://&bl&fink1"
+          - "https://l&bi&fnk1"
+          - "https://li&bn&fk1"
+          - "https://lin&bk&f1"
+          - "https://link&b1&f"
+          - "https://link1"
+
+        div-2: "Link 2"
+        2:
+          - "https://link2"
+          - "&bh&fttps://link2"
+          - "h&bt&ftps://link2"
+          - "ht&bt&fps://link2"
+          - "htt&bp&fs://link2"
+          - "http&bs&f://link2"
+          - "https&b:&f//link2"
+          - "https:&b/&f/link2"
+          - "https:/&b/&flink2"
+          - "https://&bl&fink2"
+          - "https://l&bi&fnk2"
+          - "https://li&bn&fk2"
+          - "https://lin&bk&f2"
+          - "https://link&b2&f"
+          - "https://link2"
+      list-non-animated:
+        - ""
+
+    content-footer:
+      - "&0"
+      - "&bDiscord:&f discord.gg/oceanhub"
+      - "&bWebsite: &fwww.coming-soon.com"
+    body-div-footer: "&0"
+
+
+
+  footer:
+    animated: false
+    animation:
+      - "FOOTER"
+
+    # No animation
+    footer: "&8⇚ &bPlayers online&f %online &8/&f %om &8⇛"

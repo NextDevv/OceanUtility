@@ -1,0 +1,17 @@
+name: OceanUtility
+version: '1.5-DEMO-RELEASE'
+main: oceanhub.plugins.oceanutility.OceanUtility
+api-version: 1.19
+authors: [ SpreestDev ]
+website: discord.gg/oceanhub
+commands:
+  oceanutility:
+    usage: /<command>
+    aliases: ["ou"]
+    permission: ocean-hub.utility
+    permission-message: "You don't have permission to access this endpoint command"
+
+permissions:
+  ocean-hub.utility:
+    default: op
+    description: "Gives access to the ocean-hub utility plugin"
